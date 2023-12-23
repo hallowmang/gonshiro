@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gonshiro site</title>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- 스무스 스크롤 -->
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- SplitType -->
+  <script src="https://unpkg.com/split-type"></script>
+
+  <!-- icon -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+  <script defer src="./assets/js/main.js"></script>
+</head>
+
+<body>
+  <div class="intro-bg">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+  </div>
+  <header class="header">
+    <h1 class="logo">
+      <span class="gon">Gon</span>
+      <span class="shiro">shiro</span>
+    </h1>
+
+    <nav class="nav">
+      <div class="nav-left nav-item">
+        <a href="">
+          <span>About</span>
+          <span>About</span>
+        </a>
+        <a href="">
+          <span>Company</span>
+          <span>Company</span>
+        </a>
+        <a href="">
+          <span>Business</span>
+          <span>Business</span>
+        </a>
+        <a href="">
+          <span>Works</span>
+          <span>Works</span>
+        </a>
+      </div>
+      <div class="nav-right nav-item">
+        <a href="">
+          <span>People</span>
+          <span>People</span>
+        </a>
+        <a href="">
+          <span>News</span>
+          <span>News</span>
+        </a>
+        <a href="">
+          <span>Recruit</span>
+          <span>Recruit</span>
+        </a>
+        <a href="">
+          <span>Contact</span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 스마트폰 nav -->
+  <div class="spNav-wrap">
+    <div class="spNav-group">
+      <ul class="spNav-list">
+        <li class="spNav-item">
+          <a href="" class="spNav-link">
+            <div class="spNav-inner">
+              <i class="ph-fill ph-house"></i>
+              <p>Top</p>
+            </div>
+          </a>
+        </li>
+        <li class="spNav-item">
+          <a href="" class="spNav-link">
+            <div class="spNav-inner">
+              <i class="ph-fill ph-buildings"></i>
+              <p>Business</p>
+            </div>
+          </a>
+        </li>
+        <li class="spNav-item spNav-menu">
+          <a href="" class="spNav-link">
+            <div class="spNav-inner">
+              <p>Menu</p>
+            </div>
+          </a>
+        </li>
+        <li class="spNav-item">
+          <a href="" class="spNav-link">
+            <div class="spNav-inner">
+              <i class="ph-fill ph-video-camera"></i>
+              <p>Works</p>
+            </div>
+          </a>
+        </li>
+        <li class="spNav-item">
+          <a href="" class="spNav-link">
+            <div class="spNav-inner">
+              <i class="ph-fill ph-envelope"></i>
+              <p>Contact</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="sc-visual">
+      <figure class="visual-video-box">
+        <video class="visual-video" src="./assets/videos/Gonshiro-mv.mp4" loop="loop" autoplay playsinline="playsinline"
+          muted="muted"></video>
+      </figure>
+
+      <div class="visual-bottom">
+        <h2 class="bottom-text-group">
+          <p class="bottom-main">Work Fun &amp; Play Hard</p>
+          <p class="bottom-sub">This is gonshiro ism</p>
+        </h2>
+        <ul class="sns-list">
+          <li class="sns-item">
+            <a href="">
+              <span>
+                Instagram
+              </span>
+            </a>
+          </li>
+          <li class="sns-item">
+            <a href="">
+              <span>
+                Twitter
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="menu">
+          <a href="" class="menu-link">
+            <p>
+              <span>Menu</span>
+              <span>Menu</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- sc-about -->
+    <section class="sc-about">
+      <div class="about-container">
+        <div class="about-bg">
+          <figure class="about-video">
+            <video
+              data-original="https://www.gonshiro.co.jp/gonshiro_cms/wp-content/themes/gonshiro.co.jp/assets/images/business/intro.mp4"
+              autoplay="autoplay" loop="loop" playsinline="playsinline" muted="muted"
+              src="./assets/videos/about-video.mp4"></video>
+          </figure>
+        </div>
+        <div class="about-top">
+          <h3 class="title">
+            About us
+          </h3>
+          <figure class="windmill">
+            <img src="./assets/images/ic-windmill.svg" alt="windmill image">
+          </figure>
+          <p class="about-sub">
+            We are a company that shoots, audio-records, <br>and produces TV programs, event videos, corporate VPs,
+            music videos, etc.
+          </p>
+        </div>
+        <div class="about-images">
+          <a href="" class="about-link-img">
+            <div class="img-box">
+              <img src="./assets/images/about-1.jpg" alt="about-img1">
+            </div>
+            <div class="img-box">
+              <img src="./assets/images/about-2.png" alt="about-img2">
+            </div>
+          </a>
+        </div>
+        <div class="about-link">
+          <div class="inner-title">
+            <a href="">
+              <p>
+                <span>About Us</span>
+                <span>About Us</span>
+              </p>
+            </a>
+          </div>
+          <p class="inner-sub jp">
+            私たちは様々な映像撮影を得意とする <br>
+            プロフェッショナル集団です。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- sc-project -->
+    <section class="sc-project">
+      <div class="project-container">
+        <div class="project-bg">
+        </div>
+
+        <div class="project-top">
+          <h3 class="title">
+            Works
+          </h3>
+          <figure class="windmill">
+            <img src="./assets/images/ic-windmill.svg" alt="windmill image">
+          </figure>
+        </div>
+
+        <div class="project-listWrapper">
+          <ul class="project-list">
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work1.webp" alt="work-img1">
+                </figure>
+                <p class="jp">
+                  Mr.Children 30th Anniversary Tour 半世紀へのエントランス
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work2.webp" alt="work-img1">
+                </figure>
+                <p class="jp">
+                  EXILE LIVE TOUR 2022 “POWER OF WISH”
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work3.jpg" alt="work-img1">
+                </figure>
+                <p class="jp">
+                  桑田佳祐 LIVE TOUR 2022「お互い元気に頑張りましょう!!」
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work4.jpg" alt="work-img1">
+                </figure>
+                <p class="jp">
+                  HYDE LIVE 2022 ALL SHOOTING LIVE
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work5.jpg" alt="work-img5">
+                </figure>
+                <p class="jp">
+                  セクシーゾーン ドームツアー 2020 ザ・ハイライト
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work6.jpg" alt="work-img6">
+                </figure>
+                <p class="jp">
+                  三浦大知　燦燦 -1 Song Hall Live with Orchestra-
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work7.jpg" alt="work-img7">
+                </figure>
+                <p class="jp">
+                  RADWIMPS 15th Anniversary Special Concert
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work8.jpg" alt="work-img8">
+                </figure>
+                <p class="jp">
+                  JO1 THE MOVIE 「未完成」 -Go to the TOP-
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work9.jpg" alt="work-img9">
+                </figure>
+                <p class="jp">
+                  w-inds.Online Show 「20XX “THE MUSEUM”」
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work10.jpg" alt="work-img10">
+                </figure>
+                <p class="jp">
+                  Fujii Kaze “Free” Live 2021
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work11.jpg" alt="work-img11">
+                </figure>
+                <p class="jp">
+                  ヒプノシスマイク -Division Rap Battle- 7th LIVE≪SUMMIT OF DIVISIONS≫
+                </p>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="">
+                <figure>
+                  <img src="./assets/images/work12.jpg" alt="work-img12">
+                </figure>
+                <p class="jp">
+                  みらい遺産 ～Human ✕ Lands～　島根編
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-link">
+          <div class="inner-title">
+            <a href="">
+              <p>
+                <span>View All Projects</span>
+                <span>View All Projects</span>
+              </p>
+            </a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- sc-business -->
+    <div class="wrapper">
+      <div class="spacer">
+        <section class="sc-business">
+
+          <div class="business-left">
+            <div class="spStick-wrap">
+              <div class="spBusiness-link">
+                <div class="inner-title">
+                  <a href="">
+                    <p>
+                      <span>Business</span>
+                      <span>Business</span>
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info">
+              <div class="info-bl">
+                <div class="spBusiness-img-box">
+                  <img src="./assets/images/business-1.jpg" alt="business-img1">
+                </div>
+                <h4 class="info-title">
+                  事業紹介｜サービス紹介
+                </h4>
+                <p class="info-sub">
+                  Services
+                </p>
+                <p class="info-caption jp">
+                  コンサート撮影、ミュージックビデオ、CM、番組収録、ドキュメント…<br>様々な撮影にトップクラスのクオリティで"Gonshiroらしさ" を持って取り組んでおります。
+                </p>
+                <div class="info-more">
+                  <a href="">
+                    <div class="text-box">
+                      <div class="aaa">
+                        <span>Readmore</span>
+                        <span>Readmore</span>
+                      </div>
+                    </div>
+                    <figure class="arrow">
+                      <i class="ph-fill ph-caret-right"></i>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-bl">
+                <div class="spBusiness-img-box">
+                  <img src="./assets/images/business-2.jpg" alt="business-img1">
+                </div>
+
+                <h4 class="info-title">
+                  事業紹介｜サービス紹介｜大型4K中継車
+                </h4>
+                <p class="info-sub">
+                  4K Relay Truck
+                </p>
+                <p class="info-caption jp">
+                  映像収録の要であるモニタリング環境に兎に角こだわりました。<br>撮影監督が創り出した弊社のスタイリッシュな4K対応中継車は、<br>ひと味違います
+                </p>
+                <div class="info-more">
+                  <a href="">
+                    <div class="text-box">
+                      <div class="aaa">
+                        <span>Readmore</span>
+                        <span>Readmore</span>
+                      </div>
+                    </div>
+                    <figure class="arrow">
+                      <i class="ph-fill ph-caret-right"></i>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-bl">
+                <div class="spBusiness-img-box">
+                  <img src="./assets/images/business-3.jpg" alt="business-img1">
+                </div>
+                <h4 class="info-title">
+                  事業紹介｜初めてご依頼される方へ
+                </h4>
+                <p class="info-sub">
+                  For first time clients
+                </p>
+                <p class="info-caption jp">
+                  あなたのアイデアがカタチになるまでのプロセスをご案内します。<br>お気軽にお問い合わせください。
+                </p>
+                <div class="info-more">
+                  <a href="">
+                    <div class="text-box">
+                      <div class="aaa">
+                        <span>Readmore</span>
+                        <span>Readmore</span>
+                      </div>
+                    </div>
+                    <figure class="arrow">
+                      <i class="ph-fill ph-caret-right"></i>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info-bl">
+                <div class="spBusiness-img-box">
+                  <img src="./assets/images/business-4.jpg" alt="business-img1">
+                </div>
+                <h4 class="info-title">
+                  事業紹介｜数字で知る権四郎
+                </h4>
+                <p class="info-sub">
+                  Numbers
+                </p>
+                <p class="info-caption jp">
+                  「社員数は？」「カメラは何台あるの？」<br>権四郎にまつわる様々な数字をご紹介します。
+                </p>
+                <div class="info-more">
+                  <a href="">
+                    <div class="text-box">
+                      <div class="aaa">
+                        <span>Readmore</span>
+                        <span>Readmore</span>
+                      </div>
+                    </div>
+                    <figure class="arrow">
+                      <i class="ph-fill ph-caret-right"></i>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="business-right">
+            <div class="business-right-bl">
+
+              <div class="business-link">
+                <div class="inner-title">
+                  <a href="">
+                    <p>
+                      <span>Business</span>
+                      <span>Business</span>
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="business-img-group">
+
+                <div class="business-img-box">
+                  <img src="./assets/images/business-1.jpg" alt="business-img1">
+                </div>
+
+                <div class="business-img-box">
+                  <img src="./assets/images/business-2.jpg" alt="business-img2">
+                </div>
+
+                <div class="business-img-box">
+                  <img src="./assets/images/business-3.jpg" alt="business-img3">
+                </div>
+
+                <div class="business-img-box">
+                  <img src="./assets/images/business-4.jpg" alt="business-img4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- sc-news -->
+    <section class="sc-news">
+      <div class="news-top">
+        <h3 class="title">
+          News
+        </h3>
+        <figure class="windmill">
+          <img src="./assets/images/ic-windmill.svg" alt="windmill image">
+        </figure>
+      </div>
+      <div class="news-slide swiper">
+        <div class="slide-btn swiper-button-prev"></div>
+        <div class="slide-btn swiper-button-next"></div>
+        <ul class="news-list swiper-wrapper">
+          <li class="news-item swiper-slide">
+            <a href="">
+              <figure>
+                <img src="./assets/images/slide-1.jpg" alt="slide img1">
+              </figure>
+              <div class="slide-text-group">
+                <div class="slide-tag">
+                  <span>PICKUP NEWS</span>
+                </div>
+                <div class="slide-title">
+                  <span class="jp">SONY事例紹介「FR7」にてインタビューを受けました</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="news-item swiper-slide">
+            <a href="">
+              <figure>
+                <img src="./assets/images/slide-2.jpg" alt="slide img2">
+              </figure>
+              <div class="slide-text-group">
+                <div class="slide-tag">
+                  <span>PICKUP NEWS</span>
+                </div>
+                <div class="slide-title">
+                  <span class="jp">コーポレートサイト全面リニューアルのお知らせ</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="news-item swiper-slide">
+            <a href="">
+              <figure>
+                <img src="./assets/images/slide-1.jpg" alt="slide img1">
+              </figure>
+              <div class="slide-text-group">
+                <div class="slide-tag">
+                  <span>PICKUP NEWS</span>
+                </div>
+                <div class="slide-title">
+                  <span class="jp">SONY事例紹介「FR7」にてインタビューを受けました</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="news-item swiper-slide">
+            <a href="">
+              <figure>
+                <img src="./assets/images/slide-2.jpg" alt="slide img2">
+              </figure>
+              <div class="slide-text-group">
+                <div class="slide-tag">
+                  <span>PICKUP NEWS</span>
+                </div>
+                <div class="slide-title">
+                  <span class="jp">コーポレートサイト全面リニューアルのお知らせ</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="news-item swiper-slide">
+            <a href="">
+              <figure>
+                <img src="./assets/images/slide-1.jpg" alt="slide img1">
+              </figure>
+              <div class="slide-text-group">
+                <div class="slide-tag">
+                  <span>PICKUP NEWS</span>
+                </div>
+                <div class="slide-title">
+                  <span class="jp">SONY事例紹介「FR7」にてインタビューを受けました</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="news-item swiper-slide">
+            <a href="">
+              <figure>
+                <img src="./assets/images/slide-2.jpg" alt="slide img2">
+              </figure>
+              <div class="slide-text-group">
+                <div class="slide-tag">
+                  <span>PICKUP NEWS</span>
+                </div>
+                <div class="slide-title">
+                  <span class="jp">コーポレートサイト全面リニューアルのお知らせ</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="news-cate-wrap">
+        <div class="cateNav">
+          <ul class="cate-list">
+            <li class="cate-item active">
+              <a href="">
+                <span>All</span>
+              </a>
+            </li>
+            <li class="cate-item">
+              <a href="">
+                <span>News</span>
+              </a>
+            </li>
+            <li class="cate-item">
+              <a href="">
+                <span>Press release</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="category">
+          <div class="category-group">
+            <div class="category-box">
+              <a href="" class="category-item">
+                <p class="cate-tag">Press release</p>
+                <p class="cate-title">
+                  <span>
+                    SONY事例紹介「FR7」にて　インタビューを受けました
+                  </span>
+                </p>
+                <span class="date">2023/05/10</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="" class="category-item">
+                <p class="cate-tag">News</p>
+                <p class="cate-title">
+                  <span>
+                    新入社員が入りました！！
+                  </span>
+                </p>
+                <span class="date">2023/04/01</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="" class="category-item">
+                <p class="cate-tag">News</p>
+                <p class="cate-title">
+                  <span>
+                    コーポレートサイト全面リニューアルのお知らせ
+                  </span>
+                </p>
+                <span class="date">2023/02/21</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="allNews-link">
+        <div class="inner-title">
+          <a href="">
+            <p>
+              <span>All news</span>
+              <span>All news</span>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- sc-recruit -->
+    <section class="sc-recruit">
+      <div class="recruit-container">
+
+        <div class="recruit-top">
+          <h3 class="title">
+            Recruit
+          </h3>
+          <figure class="windmill">
+            <img src="./assets/images/ic-windmill.svg" alt="windmill image">
+          </figure>
+        </div>
+
+        <div class="gallery-wrap">
+          <div class="gallery-images">
+            <div class="gallery-img-box box1">
+              <figure>
+                <img src="./assets/images/gallery-modal-1.jpg" alt="gallery img1">
+              </figure>
+            </div>
+            <div class="gallery-img-box box2">
+              <figure>
+                <img src="./assets/images/gallery-modal-2.jpg" alt="gallery img2">
+              </figure>
+            </div>
+            <div class="gallery-img-box box3">
+              <figure>
+                <img src="./assets/images/gallery-modal-3.jpg" alt="gallery img3">
+              </figure>
+            </div>
+            <div class="gallery-img-box box4">
+              <figure>
+                <img src="./assets/images/gallery-modal-4.jpg" alt="gallery img4">
+              </figure>
+            </div>
+            <div class="gallery-img-box box5">
+              <figure>
+                <img src="./assets/images/gallery-modal-5.jpg" alt="gallery img5">
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-images">
+            <div class="gallery-img-box box1">
+              <figure>
+                <img src="./assets/images/gallery-modal-1.jpg" alt="gallery img1">
+              </figure>
+            </div>
+            <div class="gallery-img-box box2">
+              <figure>
+                <img src="./assets/images/gallery-modal-2.jpg" alt="gallery img2">
+              </figure>
+            </div>
+            <div class="gallery-img-box box3">
+              <figure>
+                <img src="./assets/images/gallery-modal-3.jpg" alt="gallery img3">
+              </figure>
+            </div>
+            <div class="gallery-img-box box4">
+              <figure>
+                <img src="./assets/images/gallery-modal-4.jpg" alt="gallery img4">
+              </figure>
+            </div>
+            <div class="gallery-img-box box5">
+              <figure>
+                <img src="./assets/images/gallery-modal-5.jpg" alt="gallery img5">
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-images">
+            <div class="gallery-img-box box1">
+              <figure>
+                <img src="./assets/images/gallery-modal-1.jpg" alt="gallery img1">
+              </figure>
+            </div>
+            <div class="gallery-img-box box2">
+              <figure>
+                <img src="./assets/images/gallery-modal-2.jpg" alt="gallery img2">
+              </figure>
+            </div>
+            <div class="gallery-img-box box3">
+              <figure>
+                <img src="./assets/images/gallery-modal-3.jpg" alt="gallery img3">
+              </figure>
+            </div>
+            <div class="gallery-img-box box4">
+              <figure>
+                <img src="./assets/images/gallery-modal-4.jpg" alt="gallery img4">
+              </figure>
+            </div>
+            <div class="gallery-img-box box5">
+              <figure>
+                <img src="./assets/images/gallery-modal-5.jpg" alt="gallery img5">
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="recruit-link">
+          <div class="inner-title">
+            <a href="">
+              <p>
+                <span>Recruit</span>
+                <span>Recruit</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="top-left">
+        <a href="">
+          <div class="footer-inner-box">
+            <div class="footer-info">
+              <p class="info-title">
+                <span>Contact Us</span>
+              </p>
+              <p class="info-sub jp">
+                <span>撮影についてのお問い合わせ、<br>お見積もり依頼、詳しいご相談をされたい際は、<br>お問い合わせフォームをご活用ください。</span>
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="top-right">
+        <div class="footer-inner-box">
+          <div class="footer-info">
+            <p class="info-title">
+              <span>Follow Us</span>
+            </p>
+            <div class="info-sub">
+              <a href="" class="foo-insta">
+                <span>Instagrm</span>
+              </a>
+              <a href="" class="foo-twit">
+                <span>Twitter</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="spFooter-logo">
+        <figure>
+          <img src="./assets/images/footer-logo.svg" alt="footer-logo">
+        </figure>
+      </div>
+      <div class="footer-nav">
+        <ul class="footer-nav-list">
+          <li class="nav-item">
+            <a href="">
+              <span>トップページ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="">
+              <span>私たちについて</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="">
+              <span>会社情報</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="">
+              <span>事業紹介</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="">
+              <span>実績紹介</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="">
+              <span>メンバー</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="">
+              <span>採用情報</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="">
+              <span>問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-info-group">
+        <div class="footer-logo">
+          <figure>
+            <img src="./assets/images/footer-logo.svg" alt="footer-logo">
+          </figure>
+        </div>
+        <div class="sns">
+          <p>
+            <span>Instagram</span>
+          </p>
+          <p>
+            <span>Twitter</span>
+          </p>
+        </div>
+        <div class="copy">
+          Copyright(c) gonshiro co.,ltd. all rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

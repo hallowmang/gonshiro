@@ -1,0 +1,175 @@
+.footer {
+  .footer-top {
+    display: flex;
+    height: 35vw;
+    border-bottom: 1px solid #d6d6d5;
+    @include tablet {
+      flex-direction: column;
+      height: auto;
+    }
+    .top-left {
+      flex: 1;
+      border-right: 1px solid #d6d6d5;
+      transition-duration: 0.3s;
+      transition-property: background-color, color;
+      a {
+        display: block;
+        height: 100%;
+        span {
+          line-height: 1.7;
+        }
+      }
+    }
+    .top-right {
+      flex: 1;
+      color: #333;
+      transition: 0.3s ease;
+      .info-sub {
+        a {
+          display: flex;
+          width: auto;
+          padding: 0.5rem 2rem;
+          span {
+            font-size: 1.7vw;
+            @include desktop {
+              font-size: 2vw;
+            }
+            @include tablet {
+              font-size: 4vw;
+            }
+            @include mobile {
+              font-size: 6vw;
+            }
+            
+          }
+          .foo-insta {
+          }
+          .foo-twit {
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 10rem;
+    padding-bottom: 15rem;
+    @include tablet{
+      gap:5rem
+    }
+    @include mobile{
+      padding-bottom: 10rem;
+    }
+    .spFooter-logo {
+      display: none;
+      @include tablet{
+        display: block;
+        width: 16rem;
+      }
+      @include mobile {
+        width: 12rem;
+      }
+    }
+    .footer-nav {
+      .footer-nav-list {
+        display: flex;
+        gap: 2.5rem;
+        width: 100%;
+        @include tablet {
+          flex-direction: column;
+          align-items: center;
+          gap: 4rem;
+        }
+        @include mobile{
+          gap: 3.5rem;
+        }
+        .nav-item {
+          font-size: 1.1rem;
+          @include tablet {
+            font-size: 2rem;
+          }
+          @include mobile{
+            font-size: 1.2rem;
+          }
+          a {
+            display: block;
+            &:hover {
+              span {
+                &::after {
+                  width: 100%;
+                }
+              }
+            }
+            span {
+              position: relative;
+              padding-bottom: 3px;
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: #333;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-info-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      .footer-logo {
+        width: 13rem;
+        // margin: 17.3rem auto 0;
+        @include tablet {
+          display: none;
+        }
+        figure {
+          height: 0;
+          padding-bottom: 75.7575757576%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .sns {
+        text-align: center;
+        font-size: 1.5vw;
+        @include desktop{
+          font-size: 2.5vw;
+        }
+        @include tablet{
+          font-size: 4vw;
+        } 
+        @include mobile{
+          font-size: 5.5vw;
+        }       
+        p {
+          &:first-child {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      .copy {
+        font-size: 1vw;
+        @include desktop{
+          font-size: 2vw;
+        }
+        @include tablet{
+          font-size: 3.5vw;
+        }
+        @include mobile{
+          font-size: 4vw;
+        } 
+      }
+    }
+  }
+}

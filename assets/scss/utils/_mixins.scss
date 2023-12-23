@@ -1,0 +1,75 @@
+// // 작은 모바일 디바이스에 대한 미디어 쿼리 믹스인
+// @mixin small-mobile {
+//   // 화면 너비가 768px 미만일 때 스타일을 적용
+//   @media screen and (max-width: #{$small-mobile - 1px}) {
+//     @content; // 이 미디어 쿼리에 대한 스타일 내용을 여기에 삽입
+//   }
+// }
+
+// // 중간 크기의 모바일 디바이스에 대한 미디어 쿼리 믹스인
+// @mixin medium-mobile {
+//   // 화면 너비가 769px 이상에서 1024px 미만일 때 스타일을 적용
+//   @media screen and (min-width: #{$small-mobile}) and (max-width: #{$medium-mobile - 2px}) {
+//     @content; // 이 미디어 쿼리에 대한 스타일 내용을 여기에 삽입
+//   }
+// }
+
+// // 데스크탑 - 일반 해상도에 대한 미디어 쿼리 믹스인
+// @mixin desktop-low-res {
+//   // 화면 너비가 1025px 이상에서 1440px 미만일 때 스타일을 적용
+//   @media screen and (min-width: #{$medium-mobile}) and (max-width: #{$desktop-high-res - 1px}) {
+//     @content; // 이 미디어 쿼리에 대한 스타일 내용을 여기에 삽입
+//   }
+// }
+
+// // 데스크탑 - 고해상도에 대한 미디어 쿼리 믹스인
+// @mixin desktop-high-res {
+//   // 화면 너비가 1441px 이상에서 1920px 미만일 때 스타일을 적용
+//   @media screen and (min-width: #{$desktop-high-res}) and (max-width: #{$desktop-extra-high-res - 1px}) {
+//     @content; // 이 미디어 쿼리에 대한 스타일 내용을 여기에 삽입
+//   }
+// }
+
+// // 고해상도 디스플레이에 대한 미디어 쿼리 믹스인
+// @mixin desktop-extra-high-res {
+//   // 화면 너비가 1921px 이상에서 스타일을 적용
+//   @media screen and (min-width: #{$desktop-high-res}) and (max-width: #{$desktop-extra-high-res - 1px}) {
+//     @content; // 이 미디어 쿼리에 대한 스타일 내용을 여기에 삽입
+//   }
+// }
+
+/*반응형 화면 크기*/
+$mobile: 767px; //320부터
+$tablet: 1023px; // 768부터
+$desktop: 1440px; //1024부터
+// $largeDesktop: 1440px; //1920
+
+
+/*반응형, 브라우저 크기가 767px 이하일때*/
+@mixin mobile{
+  @media (max-width: $mobile){
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+@mixin tablet{
+  @media (max-width: $tablet){
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+@mixin desktop{
+  @media (max-width: $desktop){
+    @content;
+  }
+}
+
+/*반응형, 브라우저 크기가 1440px 이상일때*/
+@mixin largeDesktop{
+  @media (max-width: $largeDesktop){
+    @content;
+  }
+}
+

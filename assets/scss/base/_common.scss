@@ -1,0 +1,139 @@
+html{
+  font-size: 16px;
+  color: #333;
+  line-height: 1;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background: #f0f0ed;
+  line-height: 1;
+  font-family: $font-regular;
+}
+
+.intro-bg{
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  @include tablet{
+    display: none;
+  }
+  // @include desktop{
+  //   display: none;
+  // }
+  .bar1{
+    width: 50vw;
+    height: 100vh;
+    background: #C52535;
+  }
+  .bar2{
+    width: 50vw;
+    height: 100vh;
+    background: #C52535;
+  }
+}
+
+
+.jp {
+  font-family: $font-jp;
+}
+
+@keyframes loop-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.title{
+  font-weight: 600;
+  font-size: 3vw;
+  letter-spacing: 1px;
+  @include tablet{
+    font-size: 6vw;
+  }
+  @include desktop{
+    font-size: 5vw;
+  }
+}
+
+.windmill {
+  width: 4vw;
+  height: 4vw;
+  margin: 1.5vw auto 0;
+  animation: loop-rotate 32000ms linear infinite;
+  @include desktop{
+    width: 7vw;
+    height: 7vw;
+    margin: 3vw auto 0;
+  }
+  @include tablet{
+    width: 13vw;
+    height: 13vw;
+    margin: 5vw auto 0;
+  }
+}
+
+@keyframes loop-left {
+  0%{
+    transform: translate3d(0,0,0);
+  }
+  100%{
+    transform: translate3d(-100%,0,0);
+  }
+}
+
+/* footer */
+.footer-inner-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  @include tablet{
+    padding: 13rem 0 12.1rem;
+  }
+  @include desktop{
+
+  }
+  .footer-info{
+    text-align: center;
+    .info-title{
+      font-size: 3vw;
+      font-weight: 700;
+      @include desktop{
+        font-size: 5vw;        
+      }
+      @include tablet{
+        font-size: 10vw;
+      }
+    }
+    .info-sub{
+      margin-top: 0.5rem;
+      @include tablet {
+        margin-top: 2rem;
+      }
+      a{
+        display: flex;
+        flex-direction: column;
+      }
+      span{
+        font-size: 1vw;
+        @include desktop{
+          font-size: 1.2vw;        
+        }
+        @include tablet {
+          font-size: 3vw;
+        }
+        @include mobile {
+          font-size: 3.5vw;
+        }
+        
+      }
+    }
+  }
+}
