@@ -32,6 +32,9 @@ $(".nav a").hover(
 
 /* 인트로 */
 ScrollTrigger.matchMedia({
+  "(max-width:1023px)":function(){
+    lenis.start();
+  },
   /* 1024px이상일때 */
   "(min-width:1024px)":function(){
     const introTl = gsap.timeline();
