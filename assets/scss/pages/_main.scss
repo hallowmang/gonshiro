@@ -297,6 +297,9 @@
             font-size: 4vw;
             line-height: 1.6;
           }
+          @include mobile {
+            font-size: 5vw;
+          }
         }
       }
       .about-images {
@@ -309,6 +312,9 @@
           width: 80vw;
           height: 60vw;
           margin: 7vw 14vw 0;
+        }
+        @include mobile {
+          margin: 15vw 14vw 0;
         }
         .about-link-img {
           width: 100%;

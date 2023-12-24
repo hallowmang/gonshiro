@@ -1131,6 +1131,11 @@ body {
     line-height: 1.6;
   }
 }
+@media (max-width: 767px) {
+  .main .sc-about .about-container .about-top .about-sub {
+    font-size: 5vw;
+  }
+}
 .main .sc-about .about-container .about-images {
   position: relative;
   width: 40vw;
@@ -1143,6 +1148,11 @@ body {
     width: 80vw;
     height: 60vw;
     margin: 7vw 14vw 0;
+  }
+}
+@media (max-width: 767px) {
+  .main .sc-about .about-container .about-images {
+    margin: 15vw 14vw 0;
   }
 }
 .main .sc-about .about-container .about-images .about-link-img {

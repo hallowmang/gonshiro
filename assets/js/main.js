@@ -450,13 +450,11 @@ elements.forEach(function(element) {
   gsap.set(element, {
     opacity: 0,
     scale: 1.2,
-    // yPercent: -5
   });
 
   gsap.to(element, {
     opacity: 1,
     scale: 1,
-    // yPercent: 0,
     duration:0.5,
     "clip-path": "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
     ease: "none",
@@ -470,7 +468,6 @@ elements.forEach(function(element) {
           // 원래 상태로 돌아가는 애니메이션 속성 설정
           opacity: 0,
           scale: 1.2,
-          yPercent: -5,
           duration: 0.5, // 애니메이션 지속 시간
           ease: "power2.inOut" // 애니메이션 이징 설정
         });
